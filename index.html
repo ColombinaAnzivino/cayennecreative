@@ -45,8 +45,8 @@
     <meta name="twitter:image3" content="">
 </head>
 <body>
-<header>
-    <section id="top">
+<header>  
+    <section id="top" class="top-nav">
     <div class="nav-bar">
         <h1 class="logo-title"><img class="logo" src="img/logo-2.svg" alt="logo"></h1>
     
@@ -73,8 +73,17 @@
         </nav>
     </div>
     </section>
-        
 </header>
+    
+         <img class="lachickaimg" src="img/banner-paprika.jpg"> 
+    <div class="lachicka"> 
+        <br>
+        <h3>How will Paprika fit in?</h3>
+            <p>Let’s start with a dish (a project). Listen to what the customer (the client) wants. How much seasoning does he need? (What is he asking for)? Then we can determine how much paprika he needs (creativity, time, ideas).</p>
+            <p>We must have the kitchen organized; there will be many meals to prepare but prioritizing is the key (Projects). Keep ingredients in order, so when it’s time to cook you will effectively deliver that task.</p> 
+            <p>Now it’s ready! Clean up the plate, make sure the final touches are on the food (production).  You wouldn’t want the food to get cold (deadlines).</p>
+        <br>
+    </div>  
     
     
     <section class="sec-2">
@@ -188,7 +197,7 @@
        <img src="img/portrait-2.jpg">
        </div>
         <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2 vertical-align">
-            <h3>Hello!</h3> 
+            <h3>Hello Cayenne!</h3> 
                 <p class="text-section">My name is Colombina Anzivino, I'm an Ottawa based Graphic Designer, currently enjoying the perks of freelancing.</p>
             <div class="coffee-sec center">
                 <img class="icon-cup" src="img/cup-coffe.svg" alt="coffe cup">
@@ -255,6 +264,14 @@
 <script src="js/waypoints.min.js"></script>
 <script src="js/main.js"></script>
 <script>$('.unit a').click(function(){ $('body').css('overflow', 'hidden')});
-$('.close').click(function(){ $('body').css('overflow', 'visible')});</script>    
+$('.close').click(function(){ $('body').css('overflow', 'visible')});</script>  
+<script>$(window).scroll(function(){
+      if($(window).scrollTop()>850){
+         $(".top-nav").fadeIn();
+      }else{
+         $(".top-nav").fadeOut();
+      }
+
+});</script>    
 </body>
 </html>
