@@ -21,6 +21,10 @@ p {
     font-family: 'poppins', sans-serif;
 }
 
+.top-nav{
+ display:none;   
+}
+
 .lachicka{
  background-color: #030305;
  height: 100%; 
